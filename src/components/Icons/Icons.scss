@@ -1,0 +1,25 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.icons {
+  @include flex-just-al(space-around, flex-start);
+  width: 100%;
+}
+
+.icon {
+  @include flex-just-al(space-between, center);
+  flex-direction: column;
+  cursor: pointer;
+  flex: 1;
+  &__img {
+    width: 70px;
+    height: 70px;
+  }
+  &__text {
+    color: $white;
+    align-self: center;
+    text-align: center;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      2px 2px 0 black;
+  }
+}
