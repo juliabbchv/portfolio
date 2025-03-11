@@ -5,8 +5,10 @@ import Note from "../../components/Note/Note.tsx";
 export default function HomePage() {
   return (
     <main className="home-main">
-      <Icons />
-      <Note />
+      <div className="home-main__wrapper">
+        <Icons />
+        <Note />
+      </div>
     </main>
   );
 }

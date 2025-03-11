@@ -4,6 +4,10 @@
 .icons {
   @include flex-just-al(space-around, flex-start);
   width: 100%;
+  @include desktop {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 .icon {

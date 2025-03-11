@@ -1,5 +1,27 @@
+@use "./fonts";
+@use "./variables" as *;
+
 @mixin flex-just-al($justify, $align) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
+}
+
+@mixin pixel-font {
+  font-family: "Press Start 2P", serif;
+  font-size: 0.7rem;
+}
+
+/* Responsive Elements */
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
 }
