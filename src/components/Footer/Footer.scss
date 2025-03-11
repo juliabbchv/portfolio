@@ -1,0 +1,29 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts";
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background: linear-gradient(to bottom, lighten($purple, 10%), $purple);
+  border: 1px solid $blue;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+
+  &__wrapper {
+    @include flex-just-al(flex-end, center);
+    padding: 0.5rem;
+    margin-right: 3rem;
+    gap: 1rem;
+  }
+
+  &__time {
+    text-align: center;
+    font-family: "Press Start 2P", monospace;
+    font-size: 0.7rem;
+  }
+
+  &__vol-icon {
+    width: 30px;
+  }
+}
