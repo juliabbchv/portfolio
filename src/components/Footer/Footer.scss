@@ -10,11 +10,19 @@
   border: 1px solid $blue;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 
+  @include desktop {
+    @include flex-just-al(space-between, center);
+  }
+
   &__wrapper {
-    @include flex-just-al(flex-end, center);
-    padding: 0.5rem;
-    margin-right: 3rem;
+    @include flex-just-al(space-between, center);
+    padding: 0.5rem 1rem;
     gap: 1rem;
+
+    @include desktop {
+      justify-content: flex-end;
+      margin-right: 2rem;
+    }
   }
 
   &__time {
@@ -24,6 +32,37 @@
   }
 
   &__vol-icon {
+    width: 30px;
+  }
+
+  &__apps {
+    display: none;
+    @include desktop {
+      display: flex;
+      margin-left: 20rem;
+      gap: 1rem;
+    }
+  }
+
+  &__app {
+    cursor: pointer;
+    &--selected {
+      border-bottom: 2px solid black;
+    }
+  }
+
+  &__search {
+    display: none;
+    @include desktop {
+      display: flex;
+      align-items: center;
+      width: 200px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+  }
+
+  &__search-icon {
     width: 30px;
   }
 }
