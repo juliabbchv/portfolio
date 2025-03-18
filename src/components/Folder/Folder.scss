@@ -1,6 +1,57 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
+.folder {
+  width: 100%;
+  @include desktop {
+    margin-left: 5rem;
+  }
+
+  &__wrap {
+    width: 100%;
+    min-height: max-content;
+  }
+
+  &__top {
+    height: max-content;
+  }
+
+  &__typewriter {
+    width: max-content;
+  }
+
+  &__tags {
+    width: 80%;
+  }
+
+  &__projects-title {
+    margin-bottom: 0;
+  }
+
+  &__projects {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  &__project {
+    @include flex-just-al(center, center);
+    flex-direction: column;
+  }
+
+  &__project-icon {
+    height: 70px;
+    cursor: pointer;
+  }
+
+  &__project-text {
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.2rem;
+  }
+}
+
 .note__x--clickable {
   cursor: pointer;
 }

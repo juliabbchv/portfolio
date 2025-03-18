@@ -10,6 +10,7 @@
     flex-direction: column-reverse;
     padding: 2rem;
     min-height: 100vh;
+    padding-bottom: 5rem;
 
     @include desktop {
       flex-direction: row;
