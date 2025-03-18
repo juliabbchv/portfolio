@@ -31,18 +31,20 @@
   &__projects {
     display: flex;
     gap: 1rem;
-    padding: 1rem;
-    margin-bottom: 3rem;
   }
 
   &__project {
     @include flex-just-al(center, center);
     flex-direction: column;
+    padding: 1rem;
   }
 
   &__project-icon {
     height: 70px;
     cursor: pointer;
+    &--small {
+      height: 20px;
+    }
   }
 
   &__project-text {
@@ -50,8 +52,56 @@
     text-align: center;
     line-height: 1.2rem;
   }
+
+  &__main-text {
+    margin-bottom: 4rem;
+  }
+
+  &__main-group {
+    @include desktop {
+      @include flex-just-al(flex-start, center);
+    }
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+    @include desktop {
+      width: 60%;
+      margin-bottom: 0;
+    }
+  }
+
+  &__small-text {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    &--bold {
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__profile-pic {
+    height: 150px;
+    margin: 0 auto;
+    @include desktop {
+      margin: 0;
+    }
+  }
+
+  &__contact {
+    @include flex-just-al(flex-start, center);
+    &--email {
+      cursor: pointer;
+    }
+  }
 }
 
 .note__x--clickable {
   cursor: pointer;
+}
+
+.crossed-text {
+  text-decoration: line-through;
 }
