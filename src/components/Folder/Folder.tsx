@@ -4,22 +4,37 @@ import snapsFolder from "../../assets/icons/snaps-folder.svg";
 import instockFolder from "../../assets/icons/instock-folder.svg";
 import githubLogo from "../../assets/icons/github-mark.png";
 import linkedinLogo from "../../assets/icons/linkedin-logo.png";
-import email from "../../assets/icons/email.svg";
 import email2 from "../../assets/icons/email2.svg";
 import location from "../../assets/icons/location.svg";
 import profileImg from "../../assets/icons/profile-image.png";
 import "./Folder.scss";
+import { useParams, useNavigate } from "react-router-dom";
 
 interface FolderProps {
   selectedApp: string;
+  selectedProject: string;
   setSelectedApp: (value: string) => void;
+  setSelectedProject: (value: string) => void;
 }
 
-export default function Folder({ selectedApp, setSelectedApp }: FolderProps) {
+export default function Folder({
+  selectedApp,
+  selectedProject,
+  setSelectedApp,
+  setSelectedProject,
+}: FolderProps) {
   if (!selectedApp) return null;
+  if (selectedProject) return null;
+
+  const navigate = useNavigate();
 
   const handleCloseWindow = () => {
     setSelectedApp("");
+  };
+
+  const handleOpenProject = (projectName: string) => {
+    setSelectedProject(projectName);
+    navigate(`/web-dev/${projectName}`);
   };
 
   return (
@@ -54,7 +69,10 @@ export default function Folder({ selectedApp, setSelectedApp }: FolderProps) {
                 <p className="note__text folder__projects-title">Projects:</p>
               </div>
               <div className="folder__projects">
-                <div className="folder__project">
+                <div
+                  className="folder__project"
+                  onClick={() => handleOpenProject("ms-hackathon")}
+                >
                   <img
                     className="folder__project-icon"
                     src={msFolder}
@@ -64,7 +82,10 @@ export default function Folder({ selectedApp, setSelectedApp }: FolderProps) {
                     AI-Powered <br /> Small Business Tool
                   </p>
                 </div>
-                <div className="folder__project">
+                <div
+                  className="folder__project"
+                  onClick={() => handleOpenProject("snaps")}
+                >
                   <img
                     className="folder__project-icon"
                     src={snapsFolder}
@@ -75,7 +96,10 @@ export default function Folder({ selectedApp, setSelectedApp }: FolderProps) {
                     <br /> App
                   </p>
                 </div>
-                <div className="folder__project">
+                <div
+                  className="folder__project"
+                  onClick={() => handleOpenProject("instock")}
+                >
                   <img
                     className="folder__project-icon"
                     src={instockFolder}
@@ -191,7 +215,7 @@ export default function Folder({ selectedApp, setSelectedApp }: FolderProps) {
                     </p>
                   </a>
                 </div>
-                <div className="folder__projects ">
+                <div className="folder__links">
                   <div>
                     <a
                       href="https://www.linkedin.com/in/juliababicheva/

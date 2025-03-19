@@ -5,6 +5,7 @@
   width: 100%;
   @include desktop {
     margin-left: 5rem;
+    width: 70%;
   }
 
   &__wrap {
@@ -31,6 +32,7 @@
   &__projects {
     display: flex;
     gap: 1rem;
+    margin-bottom: 2rem;
   }
 
   &__project {
@@ -95,6 +97,15 @@
     &--email {
       cursor: pointer;
     }
+  }
+
+  &__bottom {
+    padding-bottom: 0;
+  }
+
+  &__links {
+    display: flex;
+    gap: 1rem;
   }
 }
 

@@ -1,0 +1,36 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.folder {
+  &__logos {
+    @include flex-just-al(flex-start, center);
+    padding-left: 0.5rem;
+    margin-top: -1rem;
+  }
+
+  &__logo {
+    width: 100px;
+  }
+
+  &__overview {
+    margin-top: -2.5rem;
+  }
+
+  &__main-text--project {
+    padding: 0 1rem;
+    margin-top: -1rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__demo {
+    margin-top: 1rem;
+    border: 0.2px solid $blue;
+  }
+}
+
+.x {
+  font-size: 0.6rem;
+  margin-right: 0.3rem;
+}
