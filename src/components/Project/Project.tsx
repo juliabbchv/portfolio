@@ -88,12 +88,6 @@ export default function Project({
                   src={msLogo}
                   alt="Microsoft Logo"
                 />
-                <span className="x">X</span>
-                <img
-                  className="folder__logo"
-                  src={bstnLogo}
-                  alt="BrainStation Logo"
-                />
               </div>
               <div className="note__front-bottom folder__bottom ">
                 <p className="note__text folder__projects-title folder__overview">
@@ -195,7 +189,7 @@ export default function Project({
                   built to make photo sharing simple, fast, and engaging.
                 </p>
                 <div className="carousel">
-                  <video className="folder__demo" autoPlay loop muted>
+                  <video className="folder__demo" controls loop muted>
                     <source src={snapsDemo} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>

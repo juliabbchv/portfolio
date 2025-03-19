@@ -30,9 +30,12 @@
   }
 
   &__projects {
-    display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
+
+    @include tablet {
+      display: flex;
+    }
   }
 
   &__project {
