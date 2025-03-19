@@ -61,6 +61,13 @@ html {
 
 a {
   background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
 }
 
 abbr[title] {

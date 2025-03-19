@@ -1,0 +1,108 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.folder {
+  &__logos {
+    @include flex-just-al(flex-start, center);
+    padding-left: 0.5rem;
+    margin-top: -1rem;
+  }
+
+  &__logo {
+    width: 100px;
+    &--snaps {
+      margin-left: -1rem;
+    }
+    &--instock {
+      margin-left: -0.2rem;
+    }
+  }
+
+  &__overview {
+    margin-top: -2.5rem;
+  }
+
+  &__main-text--project {
+    padding: 0 1rem;
+    margin-top: -1rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__demo {
+    margin-top: 1rem;
+    border: 0.2px solid $blue;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+  }
+  &__github {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+  }
+
+  &__github-text {
+    font-weight: bold;
+    font-size: 0.9rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.x {
+  font-size: 0.6rem;
+  margin-right: 0.3rem;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  &__inner {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.note__tag--back {
+  background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.arrow {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.github-logo {
+  width: 30px;
+}
