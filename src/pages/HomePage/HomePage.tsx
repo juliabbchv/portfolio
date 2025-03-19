@@ -14,6 +14,7 @@ export default function HomePage() {
 
   const handleOpen = async (iconName: string) => {
     setSelectedApp(iconName);
+    setSelectedProject("");
     if (iconName === "webDev") {
       navigate("/web-dev");
     }
@@ -37,7 +38,11 @@ export default function HomePage() {
             setSelectedApp={setSelectedApp}
             setSelectedProject={setSelectedProject}
           />
-          <Project selectedProject={selectedProject} />
+          <Project
+            selectedProject={selectedProject}
+            setSelectedApp={setSelectedApp}
+            setSelectedProject={setSelectedProject}
+          />
         </div>
       </main>
       <Footer />

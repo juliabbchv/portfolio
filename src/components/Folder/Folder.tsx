@@ -8,7 +8,7 @@ import email2 from "../../assets/icons/email2.svg";
 import location from "../../assets/icons/location.svg";
 import profileImg from "../../assets/icons/profile-image.png";
 import "./Folder.scss";
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 interface FolderProps {
   selectedApp: string;
