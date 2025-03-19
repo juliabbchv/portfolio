@@ -1,6 +1,117 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
+.folder {
+  width: 100%;
+  @include desktop {
+    margin-left: 5rem;
+    width: 70%;
+  }
+
+  &__wrap {
+    width: 100%;
+    min-height: max-content;
+  }
+
+  &__top {
+    height: max-content;
+  }
+
+  &__typewriter {
+    width: max-content;
+  }
+
+  &__tags {
+    width: 80%;
+  }
+
+  &__projects-title {
+    margin-bottom: 0;
+  }
+
+  &__projects {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__project {
+    @include flex-just-al(center, center);
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  &__project-icon {
+    height: 70px;
+    cursor: pointer;
+    &--small {
+      height: 20px;
+    }
+  }
+
+  &__project-text {
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.2rem;
+  }
+
+  &__main-text {
+    margin-bottom: 1rem;
+  }
+
+  &__main-group {
+    @include desktop {
+      @include flex-just-al(flex-start, center);
+    }
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__small-text {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    &--bold {
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__profile-pic {
+    height: 150px;
+    margin: 0 auto;
+    @include desktop {
+      margin: 0;
+    }
+  }
+
+  &__contact {
+    @include flex-just-al(flex-start, center);
+    &--email {
+      cursor: pointer;
+    }
+  }
+
+  &__bottom {
+    padding-bottom: 0;
+  }
+
+  &__links {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
 .note__x--clickable {
   cursor: pointer;
+}
+
+.crossed-text {
+  text-decoration: line-through;
 }

@@ -4,6 +4,7 @@
 
 .footer {
   position: fixed;
+  z-index: 1000000000;
   bottom: 0;
   width: 100vw;
   background: linear-gradient(to bottom, lighten($purple, 10%), $purple);

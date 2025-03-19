@@ -10,7 +10,6 @@
   }
 
   &__wrap {
-    height: 350px;
     width: 300px;
   }
   &__title {
@@ -58,13 +57,12 @@
     padding: 1rem;
     position: relative;
     max-width: 100%;
-    & > * {
-      margin-bottom: 2rem;
-    }
+    margin-bottom: 1rem;
   }
 
   &__text {
     @include pixel-font;
+    margin-bottom: 1rem;
   }
 
   &__tags {
@@ -73,7 +71,7 @@
   }
   &__tag {
     @include pixel-font;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     background-color: $purple;
     padding: 0.3rem 0;
     margin-bottom: 0.1rem;
