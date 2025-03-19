@@ -1,7 +1,6 @@
 import "./Project.scss";
 import xBtn from "../../assets/icons/x-btn.svg";
 import msLogo from "../../assets/icons/ms-logo.svg";
-import bstnLogo from "../../assets/icons/bstn-logo.svg";
 import msDemo from "../../assets/images/ms-demo.png";
 import msDemo2 from "../../assets/images/ms-demo2.png";
 import snaps from "../../assets/icons/snaps.svg";
