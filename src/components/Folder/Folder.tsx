@@ -1,6 +1,6 @@
 import xBtn from "../../assets/icons/x-btn.svg";
 import msFolder from "../../assets/icons/ms-folder.svg";
-import snapsFolder from "../../assets/icons/snaps-folder.png";
+import snapsFolder from "../../assets/icons/snaps-folder.svg";
 import instockFolder from "../../assets/icons/instock-folder.svg";
 import githubLogo from "../../assets/icons/github-mark.png";
 import linkedinLogo from "../../assets/icons/linkedin-logo.png";
