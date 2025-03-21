@@ -44,6 +44,11 @@ export default function Footer() {
 
   return (
     <footer className="footer">
+      <div>
+        <p className="footer__text--desktop">
+          &copy;2025 Julia Babicheva. All rights reserved.
+        </p>
+      </div>
       <div className="footer__apps">
         <div className="footer__search">
           <div className="footer__search-wrapper">
@@ -70,6 +75,9 @@ export default function Footer() {
       <div className="footer__wrapper">
         <div className="footer__vol">
           <img className="footer__vol-icon" src={vol} alt="volume icon" />
+          <p className="footer__text">
+            &copy;2025 Julia Babicheva. <br /> All rights reserved.
+          </p>
         </div>
         <div className="footer__time">
           <div>{formatTime(currentDateTime)}</div>

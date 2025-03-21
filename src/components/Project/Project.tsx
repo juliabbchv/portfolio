@@ -128,10 +128,18 @@ export default function Project({
                     src={gitLogo}
                     alt="GitHub Logo"
                   />
-                  <a href="https://github.com/juliabbchv/transparai-client">
+                  <a
+                    href="https://github.com/juliabbchv/transparai-client"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <p className="folder__github-text">Client |</p>
                   </a>
-                  <a href="https://github.com/juliabbchv/transparai-server">
+                  <a
+                    href="https://github.com/juliabbchv/transparai-server"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <p className="folder__github-text">Server</p>
                   </a>
                 </div>

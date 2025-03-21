@@ -34,13 +34,34 @@
 
   &__vol-icon {
     width: 30px;
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
+
+  &__text {
+    font-size: 0.7rem;
+    font-weight: bold;
+    &--desktop {
+      display: none;
+      font-size: 0.7rem;
+      font-weight: bold;
+      @include desktop {
+        display: inline;
+        margin-left: 1rem;
+      }
+    }
+    @include desktop {
+      display: none;
+    }
   }
 
   &__apps {
     display: none;
     @include desktop {
       display: flex;
-      margin-left: 20rem;
+
       gap: 1rem;
     }
   }
