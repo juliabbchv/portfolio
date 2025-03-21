@@ -143,7 +143,15 @@ export default function Folder({
               </div>
               <div className="note__front-bottom folder__bottom ">
                 <p className="note__text folder__projects-title folder__projects-title--empty">
-                  Projects coming soon...
+                  Page is coming soon. In the meantime{" "}
+                  <a
+                    href="https://juliababicheva.my.canva.site/my-portfolio-influencer-marketing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="underline">click here</span>{" "}
+                  </a>
+                  to view my portfolio.
                 </p>
               </div>
             </div>
