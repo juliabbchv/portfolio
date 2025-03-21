@@ -18,6 +18,9 @@
       margin-left: -6.6rem;
       height: 100px;
     }
+    &--ms {
+      margin-left: -4.3rem;
+    }
   }
 
   &__overview {
@@ -76,11 +79,13 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: $purple;
     color: white;
     border: none;
     cursor: pointer;
     padding: 10px;
+    @include tablet {
+      background: $purple;
+    }
   }
 }
 

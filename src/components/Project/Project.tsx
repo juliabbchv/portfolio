@@ -83,7 +83,7 @@ export default function Project({
 
               <div className="folder__logos">
                 <img
-                  className="folder__logo"
+                  className="folder__logo folder__logo--ms"
                   src={msLogo}
                   alt="Microsoft Logo"
                 />
@@ -95,11 +95,12 @@ export default function Project({
               </div>
               <div className="folder__main-text folder__main-text--project">
                 <p className="folder__text">
-                  An AI-powered solution designed to help small business owners
-                  using Microsoft products explore the benefits of AI while
-                  addressing common concerns in a familiar, non-intimidating
-                  way, helping those who may not be used to writing prompts to
-                  use AI to its full potential.
+                  This AI-powered solution was created during a 24-hour
+                  BrainStation Hackathon to help small business owners using
+                  Microsoft products explore the benefits of AI in a familiar,
+                  approachable way. It aims to make AI accessible for users who
+                  may not be experienced with writing prompts or using advanced
+                  technology.
                 </p>
                 <div className="carousel">
                   <button onClick={scrollPrev} className="carousel__btn left">

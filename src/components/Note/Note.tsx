@@ -25,9 +25,7 @@ export default function Note({ selectedApp }: FolderProps) {
             <img className="note__x" src={xBtn} alt="x button" />
           </div>
           <div className="note__front-bottom ">
-            <p className="note__text">
-              Welcome to my corner of the internet...
-            </p>
+            <p className="note__text">Welcome to my portfolio...</p>
 
             <p className="note__text typing">
               I like using technology to connect and entertain people.

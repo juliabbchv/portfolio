@@ -122,9 +122,7 @@ export default function Folder({
               <div className="note__front-top folder__top">
                 <div className="note__tags folder__tags ">
                   <div className="typewriter folder__typewriter">
-                    <h4 className="note__title ">
-                      Social Media & Influencer Marketing
-                    </h4>
+                    <h4 className="note__title ">Social Media </h4>
                   </div>
                   <p className="note__tag ">
                     Skills: Social Media Strategy, Influencer Marketing, Content
@@ -144,7 +142,7 @@ export default function Folder({
                 />
               </div>
               <div className="note__front-bottom folder__bottom ">
-                <p className="note__text folder__projects-title">
+                <p className="note__text folder__projects-title folder__projects-title--empty">
                   Projects coming soon...
                 </p>
               </div>
