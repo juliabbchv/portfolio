@@ -28,7 +28,8 @@ export default function Note({ selectedApp }: FolderProps) {
             <p className="note__text">Welcome to my portfolio...</p>
 
             <p className="note__text typing">
-              I like using technology to connect and entertain people.
+              I help businesses and entrepreneurs amplify their digital
+              presence.
             </p>
 
             <p className="note__text typing">
